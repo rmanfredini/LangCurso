@@ -1,0 +1,27 @@
+[project]
+name = "langcurso"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rmanfredini", email = "rmanfredini@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.5.0",
+    "langchain-core>=1.8.0",
+    "langchain-google-genai>=4.5.0",
+    "langchain-nvidia-ai-endpoints>=1.5.0",
+    "langchain-openai>=1.7.4",
+    "langchain-tavily>=0.2.18",
+    "langgraph-checkpoint-sqlite>=3.1.3",
+    "langgraph-cli[inmem]>=0.4.43",
+]
+
+[project.scripts]
+langcurso = "langcurso:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
