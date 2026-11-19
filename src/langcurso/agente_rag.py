@@ -44,7 +44,7 @@ def buscar_no_documento(pergunta:str):
     return serialized, retrieved_docs
 
 
-llm = ChatNVIDIA(model="nvidia/nemotron-3.5-super-vl-120b-a12b", temperature=1 )
+llm = ChatNVIDIA(model="nvidia/nemotron-3.5-super-vl-120b-a12b")
 
 
 agente_rag = create_agent(
