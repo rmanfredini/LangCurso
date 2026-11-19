@@ -1,7 +1,7 @@
 {
     "dependencies" : ["."],
     "graphs":{
-        "agent": "./agent.py:agente_ads"
+        "agent": "./agente_rag.py:agente_rag"
     },
     "env": ".env"
 
